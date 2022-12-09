@@ -22,8 +22,6 @@
     "build": "gulp styles",
     "start": "gulp"
   },
-
-
   "browserslist": [
     "last 2 versions",
     "not dead",
@@ -32,7 +30,7 @@
   "editorconfig-cli": [
     "*.json",
     "*.js",
-    "*.html",
+    "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
     "source/less/**/*.less"

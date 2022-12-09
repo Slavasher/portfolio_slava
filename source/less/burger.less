@@ -1,0 +1,76 @@
+.burger {
+  padding: 10px 20px;
+  cursor: pointer;
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.burger__menu {
+  position: fixed;
+  top: 100px;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 100;
+  display: flex;
+  transition: 0.3s;
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.burger__menu--open {
+  right: 0;
+}
+
+.burger__item {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 6px auto;
+  background-color: #fff;
+  transition: 0.2s;
+  @media (min-width: @tablet-width) {
+
+  }
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.burger__block {
+
+}
+
+.burger__block--active .burger__item {
+  &:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: translateY(-9.8px) rotate(-45deg);
+  }
+
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+

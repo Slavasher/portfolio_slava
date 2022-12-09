@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=PT+Sans:wght@400;700&family=Permanent+Marker&family=Poppins:wght@400;500;700&family=Silkscreen:wght@700&display=swap');
+@import "style.less";
+@import "header.less";
+@import "menu.less";
+@import "bio.less";
+@import "info.less";
+@import "icons.less";
+@import "skills.less";
+@import "second.less";
+@import "story.less";
+@import "resume.less";
+@import "education.less";
+@import "diploma.less";
+@import "project.less";
+@import "location.less";
+@import "contact.less";
+@import "footer.less";
+@import "burger.less";
+
+//--------color---------//
+@blue: #81B3D2;
+@blue2: #669EC0;
+@blue3: #5496BD;
+@blue4: #678fa8;
+@black: #000000;
+@black2: #5C6870;
+@black3: #333333;
+@white: #FFFFFF;
+@white2: #EEEEEE;
+@violet: rgb(125, 125, 223);
+
+//---------Viewport--------//
+@mobile-width: 320px;
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
+//-------Retina-------/
+
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}
+
+//--------index--------//
+.index {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  max-width: 100%;
+  // text-transform: uppercase;
+  margin: 0 auto;
+  background: @white;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+  }
+}
+
+main {
+  //max-width: 1200px;
+  //margin: 0 auto;
+}
+
+.personal {
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 70px auto;
+    display: flex;
+    max-width: 1200px;
+  }
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  max-width: 50%;
+  text-align: center;
+  padding: 7px;
+  border-radius: 2em;
+  transition: 1s;
+  background-color: @violet;
+  color: @white;
+  cursor: pointer;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: rgba(125, 125, 223, 0.7);
+    color: @black;
+  }
+  &:focus {
+    background-color: rgba(125, 125, 223, 0.7);
+    color: @black;
+  }
+  &:active {
+    background-color: rgb(30, 30, 187);
+    color: @white;
+  }
+
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 100%;
+  }
+}
+.knowledge{
+  display: grid;
+
+  padding-top: 70px;
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+}
+footer{
+  background-color: @violet;
+}
+
